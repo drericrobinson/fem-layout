@@ -31,13 +31,45 @@ div img {
 }
 
 /* grid system -- mobile first! */
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+[class*="col-"] {
+	flex-basis: 98%;
+	margin-left: 4%;
+}
 
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
+	.col-1-2 {
+		flex: 0 0 44%;
+	}
+
+	.col-2 {
+		flex: 0 0 44%;
+	}
+
+	.col-1-4 {
+		flex: 0 0 20%;
+	}
+
+	.col-3-4 {
+		flex: 0 0 68%;
+	}
+
+	.col-4 {
+		flex: 0 0 92%;
+	}
 
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+	.col-1-2 {
+		flex: 0 0 20%;
+	}
 
 }
